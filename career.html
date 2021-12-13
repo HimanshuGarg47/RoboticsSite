@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="ExternalSources\custom.css">
+    <link rel="stylesheet" href="ExternalSources\flexslider.css">
+
+    <title>ThenRobotics</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-" style="background-color: #e7e7e7;">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-4" href="#">
+                <img src="Pictures\STEM-LOGO-FINAL.png" height=120px width=220px style="display: inline-block;">
+
+            </a>
+            <!-- <a class="navbar-brand" href="#"><img src="aNryi.png" height=140px width=220px></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mt-1 me-auto mb-1  mb-lg-0" style="font-size:larger; padding-left: 120px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="robot1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="centre.html">Centres</a></li>
+                            <li><a class="dropdown-item" href="career.html">Career</a></li>
+                            <li><a class="dropdown-item" href="webinar_request.html">Request For Webinar</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex ">
+                    <input class="form-control me-2 " type="search " placeholder="Search " aria-label="Search ">
+                    <button class="btn btn-outline-danger " type="submit ">Search</button>
+                </form>
+                <div class="mx-3">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                    <button class="btn btn-danger mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                </div>
+            </div>
+    </nav>
+
+
+
+    <!-- main content    -->
+
+
+    <div class="main-container">
+        <section>
+            <div class="col-sm-12 text-center">
+                <h4 class="uppercase mb16">job</h4>
+                <p class="lead mb64">Pleasure in the Job puts perfection in the work</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+                        <form action="https://cbemail.herokuapp.com/job" method="POST" data-success="Thanks for showing interest in Coding Blocks.Our team will shortly get in touch with you." data-error="Please fill all fields correctly.">
+                            <legend>Personal Details:</legend><input type="text" class="validate-required" name="name" placeholder="Your Name"> <input type="text" class="validate-required validate-tel" name="contactnumber" placeholder="Contact Number" maxlength="10">                            <input type="text" class="validate-required validate-email" name="emailid" placeholder="Email Address">
+                            <input type="text" class="validate-required" name="currentaddress" placeholder="Current Address"> <input type="text" class="validate-required" name="city" placeholder="city"> <input type="text" class="validate-required" name="state"
+                                placeholder="state"> <input type="text" class="validate-required" name="pincode" placeholder="pincode" maxlength="6"> <input type="text" class="validate-required" name="country" placeholder="country"> <input type="text" class="validate-required"
+                                name="fathername" placeholder="father's name"> <input type="text" class="validate-required" name="permanentaddress" placeholder="Permanent Address">
+                            <input type="text" class="validate-required" name="pcity" placeholder="city"> <input type="text" class="validate-required" name="pstate" placeholder="state"> <input type="text" class="validate-required" name="ppincode" placeholder="pincode"
+                                maxlength="6">
+                            <legend>educational details:</legend><input type="text" class="validate-required" name="college" placeholder="College/University/School">
+                            <div class="form-group">Degree : <input type="radio" class="validate-required" name="degree" value="btech" id="btech"> <label for="btech">B.Tech</label> | <input type="radio" class="validate-required" name="degree" value="mtech" id="mtech">
+                                <label for="mtech">M.Tech</label> | <input type="radio" class="validate-required" name="degree" value="bca" id="bca"> <label for="bca">B.C.A.</label> | <input type="radio" class="validate-required" name="degree" value="mca"
+                                    id="mca">
+                                <label for="mca">M.C.A</label> | <input type="radio" class="validate-required" name="degree" value="other" id="other"> <label for="other">Other</label></div>
+                            <div class="form-group">Specialization : <input type="radio" class="validate-required" name="specialization" value="cs" id="cse"> <label for="cse">CS / IT / SE </label>
+                                <input type="radio" class="validate-required" name="specialization" value="ece" id="ece"> <label for="ece">EE / ECE / EEE</label> <input type="radio" class="validate-required" name="specialization" value="na" id="na">
+                                <label for="na">Other</label>
+                            </div>batch:<br><label for="batch_from">from</label> <select id="batch1" name="batch">
+                                <option value="year">year</option>
+                                <option value="2027">2027</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                            </select> <label for="batch_to">to</label> <select id="batch2" name="batch">
+                                <option value="year">year</option>
+                                <option value="2027">2027</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                            </select>
+                            <legend>Professional details:</legend>
+                            <div id="professional"><input type="text" class="validate-required" name="designation" value="designation" placeholder="Designation"> <input type="text" class="validate-required" name="organisation" value="organisation" placeholder="organisation">                                Time period:<br><label for="time_from">from</label>
+                                <select id="time_from" name="year">
+                                    <option value="2027">2027</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                </select> <label for="time_to">to</label> <select id="time_to" name="year">
+                                    <option value="2027">2027</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                </select></div>
+                            <div class="form-group">Applying for: <label for="job">JOB <input type="radio"
+                                        class="validate-required" name="type" value="job" id="job"
+                                        onclick="ShowHideDiv()"></label> <label for="internship">INTERNSHIP <input
+                                        type="radio" class="validate-required" name="type" value="internship"
+                                        id="internship" onclick="ShowHideDiv()"></label></div>
+                            <div class="form-group" id="jobSelect" style="display: none"><label>Intrested in job</label>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-10">
+                                        <div><input name="interest" type="checkbox" value="Teaching" id="Teaching">
+                                            <label class="non-label" for="Teaching">Teaching profile</label></div>
+                                        <div><input name="interest" type="checkbox" value="software development" id="softwareDev"> <label class="non-label" for="softwareDev">Software
+                                                development</label></div>
+                                        <div><input name="interest" type="checkbox" value="marketing" id="marketing">
+                                            <label class="non-label" for="marketing">Marketing profile</label></div>
+                                        <div><input name="interest" type="checkbox" value="operational" id="operational"> <label class="non-label" for="operational">Operational
+                                                profile</label></div>
+                                        <div><input name="interest" type="checkbox" value="office" id="office"> <label class="non-label" for="office">office support</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="internSelect" style="display: none"><label>Intrested in
+                                    internship</label>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-10">
+                                        <div><input name="interest" type="checkbox" value="Teaching" id="teachingA">
+                                            <label class="non-label" for="teachingA">Teaching assistant</label></div>
+                                        <div><input name="interest" type="checkbox" value="software development" id="softwareDev2"> <label class="non-label" for="softwareDev2">Software
+                                                development</label></div>
+                                        <div><input name="interest" type="checkbox" value="marketing" id="marketingP">
+                                            <label class="non-label" for="marketingP">Marketing profile</label></div>
+                                        <div><input name="interest" type="checkbox" value="others" id="others"> <label class="non-label" for="others">others</label></div><input name="interest" type="text" placeholder="others">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+
+        <!--endfooter-->
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
